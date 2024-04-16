@@ -6,7 +6,7 @@
 LOG_MODULE(testmain);
 using namespace glm;
 
-#define N (128)
+#define N (256)
 
 int main() {
 
