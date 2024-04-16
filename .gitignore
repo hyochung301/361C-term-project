@@ -1,0 +1,12 @@
+*.o
+**/.DS_Store
+run
+CMakeCache.txt
+CMakeFiles/
+Makefile
+bin/
+build/
+cmake_install.cmake
+CMakeDoxyfile.in
+CMakeDoxygenDefaults.cmake
+
