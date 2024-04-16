@@ -4,6 +4,12 @@
 #include <flgl/logger.h>
 #include "FFT_Solver2d.h"
 
+/*
+	The base class has members:
+		const size_t N;
+		float* const buffer;
+*/
+
 class Seq_FFT_Solver2d : public FFT_Solver2d {
 private:
 	// TODO add members
