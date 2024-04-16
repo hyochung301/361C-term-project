@@ -1,4 +1,5 @@
 #include "GPU_FFT_Solver2d.h"
+LOG_MODULE(gpufft);
 
 GPU_FFT_Solver2d::GPU_FFT_Solver2d(size_t n, float* buff) : FFT_Solver2d(n, buff) {
 	// TODO constructor

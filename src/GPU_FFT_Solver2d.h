@@ -3,7 +3,6 @@
 #include <flgl.h>
 #include <flgl/logger.h>
 #include "FFT_Solver2d.h"
-LOG_MODULE(seqfft);
 
 class GPU_FFT_Solver2d : public FFT_Solver2d {
 private:
