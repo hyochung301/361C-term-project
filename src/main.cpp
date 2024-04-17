@@ -22,15 +22,15 @@ void upd(float dt) {
 	if (window.keyboard[GLFW_KEY_SPACE].pressed) {
 		switch (solver%3) {
 		case 0:
-			LOG_DBG("SWITCHING SOLVER TO: FFTW")
+			LOG_DBG("SWITCHING SOLVER TO: FFTW");
 			toy.set_fft_type(fftw_fft);
 			break;
 		case 1:
-			LOG_DBG("SWITCHING SOLVER TO: SEQUENTIAL")
+			LOG_DBG("SWITCHING SOLVER TO: SEQUENTIAL");
 			toy.set_fft_type(seq_fft);
 			break;
 		case 2:
-			LOG_DBG("SWITCHING SOLVER TO: GPU")
+			LOG_DBG("SWITCHING SOLVER TO: GPU");
 			toy.set_fft_type(gpu_fft);
 			break;
 		}
