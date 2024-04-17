@@ -1,10 +1,12 @@
 # Accelerating a simple fluid sim with CUDA FFTs
 ### UT ECE 361C (Multicore) Term Project
-I've adapted the fluid sim so that it uses an abstract FFT type. This way we can slot in our own various FFT implementations (sequential, gpu, library).     
+I've adapted the fluid sim so that it uses an abstract FFT type. This way we can slot in our own various FFT implementations (sequential, gpu, library).    
+### Files to look at
 See the abstract FFT type at `./fluid-solver-toy/src/FFT_Solver2d.h`, we will be extending this      
-See `./src/Seq_FFT_Solver2d.h & .cpp` and `./src/GPU_FFT_Solver2d.h & .cpp` for the TODO implementations  
+See `./src/Seq_FFT_Solver2d.h & .cpp` and `./src/GPU_FFT_Solver2d.h & .cpp` for the TODO implementations
+See the last function in `./fluid-solver-toy/src/StamFFT_FluidSolver.cpp` to see how the fft is used and accessed           
 
-Details of the FFT implementations:     
+### Notes on fft buffer format
       
 FFTs will be performed on inputs of real #'s represented as float arrays        
 the FFTs should be performed in place -- even if this is just a copy :(        
