@@ -20,6 +20,7 @@ static FFTW_FFT_Solver2d* fftw_fft;
 void upd(float dt) {
 	(void)dt;
 	if (window.keyboard[GLFW_KEY_L].pressed) {
+		solver++;
 		switch (solver%3) {
 		case 0:
 			LOG_DBG("SWITCHING SOLVER TO: FFTW");
@@ -34,7 +35,6 @@ void upd(float dt) {
 			toy.set_fft_type(gpu_fft);
 			break;
 		}
-		solver++;
 	}
 }
 
