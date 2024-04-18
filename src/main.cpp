@@ -36,7 +36,6 @@ void upd(float dt) {
 		}
 		solver++;
 	}
-	// while (!window.keyboard[GLFW_KEY_9].pressed) window.update();
 }
 
 int main() {
