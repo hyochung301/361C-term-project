@@ -19,7 +19,7 @@ static FFTW_FFT_Solver2d* fftw_fft;
 
 void upd(float dt) {
 	(void)dt;
-	if (window.keyboard[GLFW_KEY_SPACE].pressed) {
+	if (window.keyboard[GLFW_KEY_L].pressed) {
 		switch (solver%3) {
 		case 0:
 			LOG_DBG("SWITCHING SOLVER TO: FFTW");
@@ -36,6 +36,7 @@ void upd(float dt) {
 		}
 		solver++;
 	}
+	// while (!window.keyboard[GLFW_KEY_9].pressed) window.update();
 }
 
 int main() {
@@ -43,7 +44,7 @@ int main() {
 	glconfig.set_flgl_path("fluid-solver-toy/lib/flgl/");
 	glconfig.set_shader_path("fluid-solver-toy/shaders/");
 
-	toy.set_fft_type(fftw_fft);
+	// toy.set_fft_type(fftw_fft);
 
 	toy.run(upd);
 
