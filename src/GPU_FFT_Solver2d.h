@@ -4,6 +4,8 @@
 #include <flgl/logger.h>
 #include "FFT_Solver2d.h"
 
+#include <cuda.h>
+
 /*
 	the FFTs should be performed in place
 	FFT buffer is of size (n*n*2)
