@@ -1,3 +1,4 @@
 [submodule "fluid-solver-toy"]
 	path = fluid-solver-toy
-	url = https://github.com/collebrusco/fluid-solver-toy
+	url = https://github.com/hyochung301/fluid-solver-toy.git
+	branch = cuda_solver
